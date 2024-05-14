@@ -15,31 +15,13 @@ body {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  background-color: #333;
-}
-
-.reference {
-  color: rgb(195, 195, 195);
-  font-size: 1.5rem;
-  margin: 5px;
-  border: 5px solid red;
-  padding: 5px;
-  text-align: center;
-}
-
-.reference a {
-  color: red;
-  font-size: 1.5rem;
-}
-
-.reference a:hover {
-  text-decoration: underline;
+  background-color: #32233e;
 }
 
 .container {
   width: 800px;
   max-width: 80%;
-  background-color: rgb(195, 195, 195);
+  background-color: rgb(203, 149, 197);
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 0 10px 2px;
@@ -53,16 +35,16 @@ body {
 }
 
 .btn {
-  background-color: rgb(95, 95, 95);
+  background-color: rgb(97, 66, 114);
   border: 1px solid;
   border-radius: 5px;
   padding: 5px 10px;
-  color: rgb(210, 210, 210);
+  color: rgb(221, 165, 213);
   outline: none;
 }
 
 .btn:hover {
-  background-color: rgb(195, 195, 195);
+  background-color: rgb(246, 196, 239);
   border-color: black;
   color: black;
   cursor: pointer;
