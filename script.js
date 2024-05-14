@@ -42,49 +42,63 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: `placeholder`,
+    text: `You start to wake up. You feel as though you've been sleeping for years. So long, you can barely remember who you are.`,
     options: [
       {
-        text: `placeholder`,
+        text: `Who am I?`,
         nextText: 2,
       },
       {
-        text: `placeholder`,
-        nextText: 2,
+        text: `What was I doing before this?`,
+        nextText: 3,
       },
     ],
   },
   {
     id: 2,
-    text: `placeholder`,
+    text: `You search around in your mind for your name. Player. That's who you are.
+    
+    You foggily dig through your memories. <i>That's right,</i> you remember, <i>I decided to secretly emigrate through a private company named Wyscan.</i>
+
+    It was very expensive, much more than you could ever afford. Where did you get the money again?`,
     options: [
       {
-        text: `placeholder`,
-        nextText: 3,
+        text: `A loan. You haggled and signed away all of your belongings to qualify for a loan to cover the ludicrous costs.`,
+        nextText: 4,
       },
       {
-        text: `placeholder`,
-        nextText: 3,
+        text: `Someone named me a beneficiary in their will. You don't know who it was, but you inherited just enough to cover the costs.`,
+        nextText: 4,
+      },
+      {
+        text: `I won the money. Some might call it luck or coincidence, but however the means, you won money to cover the costs.`,
+        nextText: 4,
       },
     ],
   },
   {
     id: 3,
-    text: `placeholder`,
+    text: `You foggily dig through your memories. <i>That's right,</i> you remember, <i>I decided to secretly emigrate through a private company named Wyscan.</i>
+
+    It was very expensive, much more than you could ever afford. Where did you get the money again?`,
     options: [
       {
-        text: `placeholder`,
+        text: `A loan. You haggled and signed away all of your belongings to qualify for a loan to cover the ludicrous costs.`,
         nextText: 4,
       },
       {
-        text: `placeholder`,
+        text: `Someone named me a beneficiary in their will. You don't know who it was, but you inherited just enough to cover the costs.`,
+        nextText: 4,
+      },
+      {
+        text: `I won the money. Some might call it luck or coincidence, but however the means, you won money to cover the costs.`,
         nextText: 4,
       },
     ],
   },
   {
     id: 4,
-    text: `placeholder`,
+    text: `<i>But why did I want to leave so secretly?`,
     options: [
       {
         text: `placeholder`,
