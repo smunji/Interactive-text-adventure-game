@@ -8,6 +8,8 @@ function startGame() {
   showTextNode(1);
 }
 
+var name = "text";
+
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find((textNode) => textNode.id === textNodeIndex);
   textElement.innerText = textNode.text;
@@ -56,7 +58,7 @@ const textNodes = [
   },
   {
     id: 2,
-    text: `You search around in your mind for your name. Player. That's who you are.
+    text: `You search around in your mind for your name. Player ${name}. That's who you are.
     
     You foggily dig through your memories. <i>That's right,</i> you remember, <i>I decided to secretly emigrate through a private company named Wyscan.</i>
 
