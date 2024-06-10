@@ -1,6 +1,7 @@
 const textElement = document.getElementById("text");
 const optionButtonsElement = document.getElementById("option-buttons");
 const raptorButtonsElement = document.getElementById("option-rights");
+const button = document.createElement("button");
 
 let state = {};
 
@@ -20,22 +21,20 @@ function showTextNode(textNodeIndex) {
 
   textNode.options.forEach((option) => {
     if (showOption(option)) {
-      const button = document.createElement("button");
       button.innerText = option.text;
       button.classList.add("btn");
       button.addEventListener("click", () => selectOption(option));
       optionButtonsElement.appendChild(button);
     }
-  });
 
-  textNode.raptors.forEach((raptor) => {
-    if (showRaptor(raptor)) {
-      const button = document.createElement("button");
-      button.innerText = raptor.text;
-      button.classList.add("btn");
-      button.addEventListener("click", () => selectRaptor(raptor));
-      optionButtonsElement.appendChild(button);
-    }
+    textNode.raptors.forEach((raptor) => {
+      if (showRaptor(raptor)) {
+        button.innerText = raptor.text;
+        button.classList.add("btn");
+        button.addEventListener("click", () => selectRaptor(raptor));
+        optionButtonsElement.appendChild(button);
+      }
+    });
   });
 }
 
