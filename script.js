@@ -79,7 +79,7 @@ const textNodes = [
         nextText: 3,
       },
     ],
-    optiors: [
+    options: [
       {
         text: `this is right text`,
         nextText: 2
