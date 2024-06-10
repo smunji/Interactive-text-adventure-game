@@ -1,6 +1,6 @@
 const textElement = document.getElementById("text");
 const optionButtonsElement = document.getElementById("option-buttons");
-const optiorButtonsElement = document.getElementById("option-rights");
+const raptorButtonsElement = document.getElementById("option-rights");
 
 let state = {};
 
@@ -28,12 +28,12 @@ function showTextNode(textNodeIndex) {
     }
   });
 
-  textNode.options.forEach((option) => {
-    if (showOption(option)) {
+  textNode.raptors.forEach((raptor) => {
+    if (showRaptor(raptor)) {
       const button = document.createElement("button");
-      button.innerText = option.text;
+      button.innerText = raptor.text;
       button.classList.add("btn");
-      button.addEventListener("click", () => selectOption(option));
+      button.addEventListener("click", () => selectRaptor(raptor));
       optionButtonsElement.appendChild(button);
     }
   });
@@ -52,18 +52,19 @@ function selectOption(option) {
   showTextNode(nextTextNodeId);
 }
 
-function showOption(option) {
-  return option.requiredState == null || option.requiredState(state);
+function showRaptor(raptor) {
+  return raptor.requiredState == null || raptor.requiredState(state);
 }
 
-function selectOption(option) {
-  const nextTextNodeId = option.nextText;
+function selectRaptor(raptor) {
+  const nextTextNodeId = raptor.nextText;
   if (nextTextNodeId <= 0) {
     return startGame();
   }
-  state = Object.assign(state, option.setState);
+  state = Object.assign(state, raptor.setState);
   showTextNode(nextTextNodeId);
 }
+
 
 const textNodes = [
   {
@@ -79,10 +80,10 @@ const textNodes = [
         nextText: 3,
       },
     ],
-    options: [
+    raptors: [
       {
-        text: `this is right text`,
-        nextText: 2
+        text: `this is right side option`,
+        nextText: 2,
       },
     ],
   },
