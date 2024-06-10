@@ -28,13 +28,13 @@ function showTextNode(textNodeIndex) {
     }
   });
 
-  textNode.optiors.forEach((optior) => {
-    if (showOptior(optior)) {
+  textNode.options.forEach((option) => {
+    if (showOption(option)) {
       const button = document.createElement("button");
-      button.innerText = optior.text;
+      button.innerText = option.text;
       button.classList.add("btn");
-      button.addEventListener("click", () => selectOptior(optior));
-      optiorButtonsElement.appendChild(button);
+      button.addEventListener("click", () => selectOption(option));
+      optionButtonsElement.appendChild(button);
     }
   });
 }
@@ -56,12 +56,12 @@ function showOption(option) {
   return option.requiredState == null || option.requiredState(state);
 }
 
-function selectOptior(optior) {
-  const nextTextNodeId = optior.nextText;
+function selectOption(option) {
+  const nextTextNodeId = option.nextText;
   if (nextTextNodeId <= 0) {
     return startGame();
   }
-  state = Object.assign(state, optior.setState);
+  state = Object.assign(state, option.setState);
   showTextNode(nextTextNodeId);
 }
 
