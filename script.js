@@ -79,6 +79,12 @@ const textNodes = [
         nextText: 3,
       },
     ],
+    optiors: [
+      {
+        text: `this is right text`,
+        nextText: 2
+      },
+    ]
   },
   {
     id: 2,
