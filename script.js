@@ -1,5 +1,6 @@
 const textElement = document.getElementById("text");
 const optionButtonsElement = document.getElementById("option-buttons");
+const optiorButtonsElement = document.getElementById("option-rights");
 
 let state = {};
 
@@ -26,6 +27,16 @@ function showTextNode(textNodeIndex) {
       optionButtonsElement.appendChild(button);
     }
   });
+
+  textNode.optiors.forEach((optior) => {
+    if (showOptior(optior)) {
+      const button = document.createElement("button");
+      button.innerText = optior.text;
+      button.classList.add("btn");
+      button.addEventListener("click", () => selectOptior(optior));
+      optiorButtonsElement.appendChild(button);
+    }
+  });
 }
 
 function showOption(option) {
@@ -38,6 +49,19 @@ function selectOption(option) {
     return startGame();
   }
   state = Object.assign(state, option.setState);
+  showTextNode(nextTextNodeId);
+}
+
+function showOption(option) {
+  return option.requiredState == null || option.requiredState(state);
+}
+
+function selectOptior(optior) {
+  const nextTextNodeId = optior.nextText;
+  if (nextTextNodeId <= 0) {
+    return startGame();
+  }
+  state = Object.assign(state, optior.setState);
   showTextNode(nextTextNodeId);
 }
 
