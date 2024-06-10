@@ -84,7 +84,7 @@ const textNodes = [
         text: `this is right text`,
         nextText: 2
       },
-    ]
+    ],
   },
   {
     id: 2,
