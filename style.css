@@ -82,11 +82,13 @@ a {
 }
 
 .popout-menu.left {
+  position: relative;
   margin-right: -40px;
   z-index: 2;
 }
 
 .popout-menu.right {
+  position: relative;
   margin-left: -40px;
   z-index: 2;
 }
