@@ -19,6 +19,8 @@ body {
 }
 
 .container {
+  display: flex;
+  align-items: center;
   width: 800px;
   max-width: 80%;
   background-color: rgb(203, 149, 197);
