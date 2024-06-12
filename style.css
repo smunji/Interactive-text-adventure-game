@@ -20,6 +20,7 @@ body {
 
 .container {
   display: flex;
+  position: static;
   align-items: center;
   width: 40%;
   height: 100%;
@@ -30,11 +31,11 @@ body {
 }
 
 .right {
-  position: absolute;
+  position: relative;
 }
 
 .left {
-  position: absolute;
+  position: relative;
 }
 
 .text {
