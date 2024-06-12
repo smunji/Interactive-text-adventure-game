@@ -38,7 +38,7 @@ body {
 }
 
 .text {
-  display: absolute;
+  display: static;
   align-items: center;
   overflow: auto;
   width: fit-content
