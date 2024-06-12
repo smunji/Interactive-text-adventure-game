@@ -62,16 +62,6 @@ a {
   text-decoration: none;
 }
 
-.text {
-  z-index: 1;
-  transition: opacity 0.3s;
-}
-
-.text.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
 .popout-menu {
   position: relative;
   width: 0;

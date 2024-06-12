@@ -13,10 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   toggleRightButton.addEventListener('click', () => {
       rightMenu.classList.toggle('open');
   });
-
-  toggleTextContainerButton.addEventListener('click', () => {
-      textContainer.classList.toggle('hidden');
-  });
+  
 });
 
 
