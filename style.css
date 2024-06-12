@@ -21,12 +21,7 @@ body {
 .container {
   display: flex;
   align-items: center;
-  width: 40%;
-  height: 60%;
-  background-color: rgb(203, 149, 197);
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px 2px;
+  width: auto;
 }
 
 .right {
@@ -41,8 +36,13 @@ body {
   position: fixed;
   align-items: center;
   overflow: auto;
-  width: 40%;
   padding: 1%;
+  width: 40%;
+  height: 60%;
+  background-color: rgb(203, 149, 197);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
   z-index: 1;
 }
 
