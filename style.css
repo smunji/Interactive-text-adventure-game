@@ -40,6 +40,7 @@ body {
 .text {
   display: relative;
   align-items: center;
+  justify-content: center;
   overflow: auto;
   width: fit-content
 }
