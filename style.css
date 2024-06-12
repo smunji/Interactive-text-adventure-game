@@ -83,7 +83,7 @@ a {
   position: relative;
   width: 0;
   opacity: 0;
-  transition: width 0.3s opacity 0.3s;
+  transition: width 0.3s opacity ease-in;
 }
 
 .popout-menu button {
