@@ -105,7 +105,7 @@ a {
 
 .popout-menu.right {
   position: absolute;
-  margin-right: -115px;
+  margin-left: -115px;
   z-index: 2;
 }
 
