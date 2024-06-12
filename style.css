@@ -41,7 +41,8 @@ body {
   display: static;
   align-items: center;
   overflow: auto;
-  width: fit-content
+  width: fit-content;
+  z-index: 1;
 }
 
 .btn-grid {
