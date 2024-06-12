@@ -35,6 +35,7 @@ body {
 .text {
   position: fixed;
   align-items: center;
+  justify-content: center;
   overflow: auto;
   padding: 1%;
   width: 40%;
