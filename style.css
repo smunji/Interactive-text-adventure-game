@@ -14,7 +14,7 @@ body {
   /* flex-flow: column nowrap; */
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  /* width: 100vw; */
   background-color: #32233e;
 }
 
