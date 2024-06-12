@@ -34,7 +34,7 @@ body {
 }
 
 .text {
-  position: fixed;
+  position: relative;
   align-items: center;
   justify-content: center;
   overflow: auto;
