@@ -32,8 +32,8 @@ body {
 
 .text {
   display: relative;
-  align-items: center;
-  justify-content: top;
+  align-items: top;
+  justify-content: center;
 }
 
 .btn-grid {
