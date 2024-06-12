@@ -82,7 +82,7 @@ a {
 .popout-menu {
   position: relative;
   width: 0;
-  opacity: 0;
+  opacity: 1;
   transition: width 0.3s opacity ease-in;
 }
 
