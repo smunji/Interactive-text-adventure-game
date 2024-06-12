@@ -20,7 +20,7 @@ body {
 
 .container {
   display: flex;
-  position: static;
+  position: relative;
   align-items: center;
   width: 40%;
   height: 100%;
