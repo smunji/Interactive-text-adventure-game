@@ -98,13 +98,13 @@ a {
 }
 
 .popout-menu.left {
-  position: relative;
+  position: absolute;
   margin-left: -115px;
   z-index: 2;
 }
 
 .popout-menu.right {
-  position: relative;
+  position: absolute;
   margin-right: -115px;
   z-index: 2;
 }
