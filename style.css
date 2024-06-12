@@ -9,12 +9,12 @@
 
 body {
   padding: 0;
-  margin: 1vh 0;
+  /* margin: 1vh 0; */
   display: flex;
-  /* flex-flow: column nowrap; */
+  flex-flow: column;
   justify-content: center;
   align-items: center;
-  /* width: 100vw; */
+  width: 100vw;
   background-color: #32233e;
 }
 
