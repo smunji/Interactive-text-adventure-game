@@ -38,7 +38,8 @@ body {
 }
 
 .text {
-  display: relative;
+  display: absolute;
+  align-items: center;
   overflow: auto;
   width: fit-content
 }
