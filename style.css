@@ -97,14 +97,14 @@ a {
 }
 
 .popout-menu.left {
-  position: relative;
-  margin-left: -100px;
+  position: absolute;
+  margin-left: -115px;
   z-index: 2;
 }
 
 .popout-menu.right {
-  position: relative;
-  margin-right: -100px;
+  position: absolute;
+  margin-right: -115px;
   z-index: 2;
 }
 
