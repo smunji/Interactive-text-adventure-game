@@ -28,8 +28,7 @@ body {
 }
 
 .btn-grid {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
+  display: table-column;
   gap: 10px;
   margin-top: 20px;
 }
@@ -61,4 +60,56 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.text {
+  z-index: 1;
+  transition: opacity 0.3s;
+}
+
+.text.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popout-menu {
+  position: relative;
+  width: 0;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+
+.popout-menu button {
+  display: block;
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+.popout-menu.left {
+  margin-right: -40px;
+}
+
+.popout-menu.right {
+  margin-left: -40px;
+}
+
+.popout-menu.open {
+  width: 100px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
 }

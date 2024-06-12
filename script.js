@@ -1,3 +1,25 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const leftMenu = document.querySelector('.popout-menu.left');
+  const rightMenu = document.querySelector('.popout-menu.right');
+  const textContainer = document.querySelector('.text-container');
+  const toggleLeftButton = document.getElementById('toggleLeft');
+  const toggleRightButton = document.getElementById('toggleRight');
+  const toggleTextContainerButton = document.getElementById('toggleTextContainer');
+
+  toggleLeftButton.addEventListener('click', () => {
+      leftMenu.classList.toggle('open');
+  });
+
+  toggleRightButton.addEventListener('click', () => {
+      rightMenu.classList.toggle('open');
+  });
+
+  toggleTextContainerButton.addEventListener('click', () => {
+      textContainer.classList.toggle('hidden');
+  });
+});
+
+
 const textElement = document.getElementById("text");
 const optionButtonsElement = document.getElementById("option-buttons");
 const raptorButtonsElement = document.getElementById("option-rights");
