@@ -14,29 +14,37 @@ var name = "text";
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find((textNode) => textNode.id === textNodeIndex);
   textElement.innerText = textNode.text;
-  while (optionButtonsElement.firstChild) {
-    optionButtonsElement.removeChild(optionButtonsElement.firstChild);
-  }
+  
+  
+  clearOptions(option-buttons);
+  clearOptions(option-rights);
 
-  textNode.options.forEach((option) => {
+  textNode.options.forEach((option, index) => {
     if (showOption(option)) {
-      const button = document.createElement("button");
-      button.innerText = option.text;
-      button.classList.add("btn");
-      button.addEventListener("click", () => selectOption(option));
-      optionButtonsElement.appendChild(button);
+      const button = createOptionButton(option);
+      if (index % 2 === 0) {
+        optionButtonsElement.appendChild(button);
+      } else {
+        raptorButtonsElement.appendChild(button);
+      }
     }
   });
 
-  textNode.raptors.forEach((raptor) => {
-    if (showRaptor(raptor)) {
-      const button = document.createElement("button");
-      button.innerText = raptor.text;
-      button.classList.add("btn");
-      button.addEventListener("click", () => selectRaptor(raptor));
-      optionButtonsElement.appendChild(button);
-    }
-  });
+      
+}
+
+function clearOptions(element) {
+  while (element.firstChild) {
+    element.removeChild(element.firstChild);
+  }
+}
+
+function createOptionButton(option) {
+  const button = document.createElement("button");
+  button.innerText = option.text;
+  button.classList.add("btn");
+  button.addEventListener("click", () => selectOption(option));
+  return button;
 }
 
 function showOption(option) {
@@ -79,8 +87,6 @@ const textNodes = [
         text: `What was I doing before this?`,
         nextText: 3,
       },
-    ],
-    raptors: [
       {
         text: `this is right side option`,
         nextText: 2,
