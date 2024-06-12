@@ -41,7 +41,7 @@ body {
   position: fixed;
   align-items: center;
   overflow: auto;
-  width: fit-content;
+  width: 40%;
   z-index: 1;
 }
 
