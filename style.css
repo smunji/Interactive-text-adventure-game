@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  display: table;
+  display: flex;
   align-items: center;
   width: 800px;
   max-width: 80%;
