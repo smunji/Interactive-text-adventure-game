@@ -83,10 +83,12 @@ a {
 
 .popout-menu.left {
   margin-right: -40px;
+  z-index: 2;
 }
 
 .popout-menu.right {
   margin-left: -40px;
+  z-index: 2;
 }
 
 .popout-menu.open {
