@@ -39,8 +39,6 @@ body {
 
 .text {
   display: relative;
-  align-items: center;
-  justify-content: center;
   overflow: auto;
   width: fit-content
 }
@@ -99,13 +97,13 @@ a {
 
 .popout-menu.left {
   position: relative;
-  margin-right: -100px;
+  margin-left: -100px;
   z-index: 2;
 }
 
 .popout-menu.right {
   position: relative;
-  margin-left: -100px;
+  margin-right: -100px;
   z-index: 2;
 }
 
