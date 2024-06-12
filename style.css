@@ -42,6 +42,7 @@ body {
   display: relative;
   align-items: center;
   justify-content: top;
+  overflow: autos;
 }
 
 .btn-grid {
