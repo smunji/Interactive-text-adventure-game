@@ -29,6 +29,14 @@ body {
   box-shadow: 0 0 10px 2px;
 }
 
+.right {
+  position: absolute;
+}
+
+.left {
+  position: absolute;
+}
+
 .text {
   display: relative;
   align-items: center;
