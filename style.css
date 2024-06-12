@@ -21,8 +21,7 @@ body {
 .container {
   display: flex;
   align-items: center;
-  width: 400px;
-  max-width: 80%;
+  width: 40%;
   height: 100%;
   background-color: rgb(203, 149, 197);
   padding: 10px;
